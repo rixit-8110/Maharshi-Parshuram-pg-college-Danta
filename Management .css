@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#081826,#102d44,#173d5b);
+    color:#f5f5f5;
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+/* Main Heading */
+h1{
+    text-align:center;
+    font-size:3rem;
+    color:#f7d88a;
+    margin-bottom:30px;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    text-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* Line */
+hr{
+    border:none;
+    height:1px;
+    background:rgba(247,216,138,0.3);
+    margin:30px auto;
+    width:85%;
+}
+
+/* Management Cards */
+sectiona,
+sectionb,
+sectionc,
+sectiond{
+    display:block;
+    max-width:850px;
+    margin:30px auto;
+    padding:30px;
+    text-align:center;
+
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.12);
+
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.35);
+
+    transition:all 0.4s ease;
+}
+
+sectiona:hover,
+sectionb:hover,
+sectionc:hover,
+sectiond:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(247,216,138,0.25);
+}
+
+/* Images */
+img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+
+    border-radius:50%;
+    border:5px solid #f7d88a;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    transition:0.4s;
+}
+
+img:hover{
+    transform:scale(1.05);
+}
+
+/* Names */
+h2{
+    margin-top:20px;
+    color:#f7d88a;
+    font-size:1.7rem;
+    font-weight:600;
+}
+
+/* Position */
+h3{
+    margin-top:8px;
+    color:#e5e7eb;
+    font-weight:400;
+    font-size:1.1rem;
+    letter-spacing:1px;
+}
+
+/* Decorative Gold Line */
+h2::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:3px;
+    background:#f7d88a;
+    margin:12px auto;
+    border-radius:10px;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    h1{
+        font-size:2rem;
+    }
+
+    sectiona,
+    sectionb,
+    sectionc,
+    sectiond{
+        padding:20px;
+        margin:20px auto;
+    }
+
+    img{
+        width:140px;
+        height:140px;
+    }
+
+    h2{
+        font-size:1.3rem;
+    }
+
+    h3{
+        font-size:1rem;
+    }
+}
