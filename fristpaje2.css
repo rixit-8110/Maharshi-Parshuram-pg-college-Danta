@@ -1,0 +1,150 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+/* MAIN SECTION */
+
+main{
+    height: 100vh;
+    width: 100%;
+    
+    background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+    url(imgcollege.jpeg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    position: relative;
+}
+
+/* LUXURY GLOW EFFECT */
+
+main::before{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 215, 0, 0.08);
+    border-radius: 50%;
+    filter: blur(120px);
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* HEADING */
+
+h1{
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    width: 80%;
+    max-width: 1000px;
+
+    text-shadow:
+    0 0 10px rgba(255,255,255,0.2),
+    0 0 20px rgba(255,215,0,0.3);
+
+    z-index: 2;
+
+    animation: fadeIn 1.5s ease;
+}
+
+/* BUTTON */
+
+a{
+    margin-top: 40px;
+    text-decoration: none;
+
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    padding: 16px 45px;
+
+    border: 2px solid rgba(255,255,255,0.3);
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(10px);
+
+    transition: all 0.4s ease;
+
+    z-index: 2;
+
+    letter-spacing: 1px;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.35);
+}
+
+/* HOVER EFFECT */
+
+a:hover{
+    background: linear-gradient(135deg, #FFD700, #ffb700);
+
+    color: black;
+
+    transform: translateY(-5px) scale(1.05);
+
+    box-shadow:
+    0 10px 30px rgba(255,215,0,0.45);
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 768px){
+
+    h1{
+        font-size: 2.5rem;
+        width: 90%;
+    }
+
+    a{
+        padding: 14px 35px;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 480px){
+
+    h1{
+        font-size: 2rem;
+    }
+}
